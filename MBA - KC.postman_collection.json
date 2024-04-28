@@ -1,0 +1,99 @@
+{
+	"info": {
+		"_postman_id": "ce535ea3-72eb-41e1-a61b-085def2bf56f",
+		"name": "MBA - KC",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "5875282"
+	},
+	"item": [
+		{
+			"name": "GET Token",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "username",
+							"value": "quarkus-api",
+							"type": "string"
+						},
+						{
+							"key": "password",
+							"value": "n2peMSQewQ2PmZqM0nolsfZluTUZAeek",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "content-type",
+						"value": "application/x-www-form-urlencoded"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "username",
+							"value": "pedro",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "pedro",
+							"type": "text"
+						},
+						{
+							"key": "grant_type",
+							"value": "password",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8080/realms/quarkus-test/protocol/openid-connect/token",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"realms",
+						"quarkus-test",
+						"protocol",
+						"openid-connect",
+						"token"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "AUTH Endpoint",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJVNlZGMW9hMHprRXI2ald2SGZjMU5KRklVcDJYSDRiVHJkSE5nVUJsdzlFIn0.eyJleHAiOjE3MTQyMzMyNzcsImlhdCI6MTcxNDIzMjk3NywianRpIjoiZmViNzlkOTgtYThkOC00YmE0LWJjMjYtYjAzYjBmZTQ5YWRjIiwiaXNzIjoiaHR0cDovL2xvY2FsaG9zdDo4MDgwL3JlYWxtcy9xdWFya3VzLXRlc3QiLCJhdWQiOiJhY2NvdW50Iiwic3ViIjoiNGY4ZDI2MWMtMGMwMS00YjEyLWI3ZGEtNWRlOTZiOTlhN2U3IiwidHlwIjoiQmVhcmVyIiwiYXpwIjoicXVhcmt1cy1hcGkiLCJzZXNzaW9uX3N0YXRlIjoiMWRiYTE4MzEtN2ZmYi00Y2Q3LTk5MzAtNWYxMDA4NzdiZDM1IiwiYWNyIjoiMSIsImFsbG93ZWQtb3JpZ2lucyI6WyIvKiJdLCJyZWFsbV9hY2Nlc3MiOnsicm9sZXMiOlsib2ZmbGluZV9hY2Nlc3MiLCJkZWZhdWx0LXJvbGVzLXF1YXJrdXMtdGVzdCIsInVtYV9hdXRob3JpemF0aW9uIiwidXNlciJdfSwicmVzb3VyY2VfYWNjZXNzIjp7ImFjY291bnQiOnsicm9sZXMiOlsibWFuYWdlLWFjY291bnQiLCJtYW5hZ2UtYWNjb3VudC1saW5rcyIsInZpZXctcHJvZmlsZSJdfX0sInNjb3BlIjoiZW1haWwgcHJvZmlsZSIsInNpZCI6IjFkYmExODMxLTdmZmItNGNkNy05OTMwLTVmMTAwODc3YmQzNSIsImVtYWlsX3ZlcmlmaWVkIjp0cnVlLCJuYW1lIjoicGVkcm8gYWZvbnNvIiwicHJlZmVycmVkX3VzZXJuYW1lIjoicGVkcm8iLCJnaXZlbl9uYW1lIjoicGVkcm8iLCJmYW1pbHlfbmFtZSI6ImFmb25zbyIsImVtYWlsIjoicGVkcm9hLmRpc2FudGlAZ21haWwuY29tIn0.iOtf0bC6EUBM0UJQ2-3o3G7dphAAWcvJfMbl_hki58AWCfNmt4_7XZJEaKXSyoBo3X_Z71-G9HwD9iX3KWhY_VyI66wC7_Vlne5tOjPc7mdRSLFiwWh4usQFpicH1j7L4l5xRn_7u9MgniUZZt23FonCg4mysJQUUuDJhrgCbmUozsuW-bXMDqVUh7OqMNNA027Yse3W--BVxFT9yMspS3WtqfuaQt_pxaz2pq7XkriSoB12gpC8vLmp2osoEf9kfxF8d64bN8HSKNhbpUCYYcdZ8t3wJ6QaYlCUdU7ZNVPSuM2xqZpGssIc7ezOUg0pjcs07QjOLaApCOzUizyqqA",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8081/api/admin",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"api",
+						"admin"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
